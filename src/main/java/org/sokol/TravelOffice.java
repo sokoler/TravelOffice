@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class TravelOffice {
 
-    int customerCount =0;
+ //   int customerCount =0;
 
    // Customer[] customers = new Customer[2];;
 
@@ -68,23 +68,31 @@ public class TravelOffice {
         return false;
     }
 
-    public void zwrocKlientow(){
+    public Set<Customer> zwrocKlientow(){
 
+        return customers;
+
+        /*
         for (Customer cust: customers)
               {
                   System.out.println(cust.getName());
 
         }
+        */
 
     }
 
-    public void zwrocWycieczki(){
+    public Map<String,Trip> zwrocWycieczki(){
 
+        /*
         for (String trip: mapa.keySet())
         {
             System.out.println(trip);
 
         }
+        */
+
+        return mapa;
 
     }
 
