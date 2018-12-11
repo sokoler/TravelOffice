@@ -74,7 +74,7 @@ public class TravelOfficeTest {
 
        // to.findCustomerByName("Michał");
 
-        assertNotEquals(customer,to.findCustomerByName("Michałek"));
+        assertEquals(customer,to.findCustomerByName("Michał"));
 
     }
 
