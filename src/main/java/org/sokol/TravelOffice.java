@@ -11,8 +11,8 @@ public class TravelOffice {
 
    // Customer[] customers = new Customer[2];;
 
-    Set<Customer> customers =  new HashSet();
-    Map<String,Trip> mapa = new HashMap();
+    Set<Customer> customers =  new HashSet<>();
+    Map<String,Trip> mapa = new HashMap<>();
 
     public void addCustomer(Customer customer) {
 
