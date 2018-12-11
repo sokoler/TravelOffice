@@ -62,11 +62,12 @@ public class Test {
         System.out.println("Znaleziono : " +  to.findCustomerByName("Michał"));
 
         System.out.println("Wszyscy klienci : ");
-        to.zwrocKlientow();
+        System.out.println(to.zwrocKlientow());
 
         System.out.println("Wszystkie wycieczki : ");
+        System.out.println(to.zwrocWycieczki());
 
-        to.zwrocWycieczki();
+        System.out.println(Date.of("1:12:2016",":"));
 
 
       //  System.out.println(Date.of("1:12:2018",":"));

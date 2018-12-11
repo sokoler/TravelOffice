@@ -1,5 +1,7 @@
 package org.sokol;
 
+import java.util.Objects;
+
 public class Date {
 
     private int rok;
@@ -56,6 +58,21 @@ public class Date {
         int month = Integer.parseInt(array[1]);
         int day = Integer.parseInt(array[2]);
         return new Date(year, month, day);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Date date = (Date) o;
+        return rok == date.rok &&
+                miesiac == date.miesiac &&
+                dzien == date.dzien;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(rok, miesiac, dzien);
     }
 
     // public static Date of(String s, String separator) {
